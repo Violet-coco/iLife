@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemflag"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" 
+    android:background="@drawable/bg3">
+	<!-- 显示标题文本框 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:text="新增日记"
+        android:textColor="#FFFFFF" 
+        android:textSize="40sp"
+        android:textStyle="bold" />
+	<!-- 显示提示文字文本框 -->
+	
+    <TextView
+        android:id="@+id/tvFlag"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="请输入日记:"
+        android:textColor="#FFFFF0"
+        android:textSize="22sp" />
+ 
+	<!-- 输入便签内容编辑框 -->
+    <EditText
+        android:id="@+id/txtFlag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFlag"
+        android:gravity="top"
+        android:lines="12" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/btnflagCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:text="清空" />
+
+        <Button
+            android:id="@+id/btnflagSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btnflagCancel"
+            android:text="保存" />
+        <Button 
+        android:id="@+id/btn1" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="查询" 
+       />
+    </RelativeLayout>
+
+</LinearLayout>

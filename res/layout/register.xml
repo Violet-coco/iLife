@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_logo"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/login_input"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/regist_Num"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:background="#00ffffff"
+                android:hint="请输入账号"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/divider_horizontal_line" />
+
+        <EditText
+            android:id="@+id/regist_Pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#00ffffff"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/divider_horizontal_line" />
+
+        <EditText
+            android:id="@+id/pwdrepeat"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#00ffffff"
+            android:hint="请再一次输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp" />
+    </LinearLayout>
+
+<RadioGroup 
+    android:id="@+id/radioGroup"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/linearLayout01"
+    android:layout_alignLeft="@+id/linearLayout01"
+    >
+   <RadioButton
+    	android:id="@+id/female"
+ 	    android:layout_width="wrap_content" 
+  	    android:layout_height="wrap_content"
+  	    android:textColor="#ffffc0cb"
+  	    android:checked="true" 
+  	    android:text="女"
+  	    />
+    <RadioButton
+    	android:id="@+id/male"
+ 	    android:layout_width="wrap_content" 
+  	    android:layout_height="wrap_content" 
+  	    android:textColor="#ffffc0cb" 
+  	    android:text="男"
+  	    />
+    
+    
+    
+    
+    
+</RadioGroup>
+
+    <Spinner
+        android:id="@+id/Qspinner"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/PSMail"
+        android:layout_alignRight="@+id/linearLayout01"
+        android:background="#ffffb6c1"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/btn_regist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PSMail"
+        android:layout_alignRight="@+id/Qspinner"
+        android:layout_below="@+id/Qspinner"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/login_button_select"
+        android:textColor="#ffffff"
+        android:textSize="20.0sp"
+        android:text="注        册" />
+
+    <EditText
+        android:id="@+id/PSMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup"
+        android:layout_below="@+id/Qspinner"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="输入答案" />
+
+</RelativeLayout>

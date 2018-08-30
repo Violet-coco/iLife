@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources  xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	
+	<string name="hello">Hello World, Main!</string>
+	
+	<string name="my_dialog_loading">Loading</string>
+	<string name="point">温馨提示</string>
+	<string name="exit_message">你确定要退出吗？</string>
+	<string name="exit_ok">确定</string>
+	<string name="exit_cancle">取消</string>
+	<string name="error_system_message">系统错误</string>
+	
+    <string name="haha">mymoney</string>
+    <string name="app_name">iLife</string>
+    <string name="done">完成</string>
+    <string name="clear">清除</string>
+    <string name="listview_data_loading">正在加载数据...</string>
+    <string name="listview_empty">没有数据</string>
+    <string name="back_btn">返回</string>
+    <string name="edit_btn">编辑</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="alert_dialog_ok">确定</string>
+    <string name="alert_dialog_cancel">取消</string>
+    <string name="spn_prompt_category">类别</string>
+    <string name="spn_prompt_subcategory">子类别</string>
+    <string name="spn_prompt_account">账户</string>
+    <string name="spn_prompt_corporation">商家</string>
+    <string name="spn_prompt_project">项目</string>
+    <string name="add_user">添加用户</string>
+    <string name="add_expense_quickly">随手记一笔</string>
+    <string name="list_expense">流水</string>
+    <string name="nav_add_expense">记账</string>
+    <string name="nav_report">报表</string>
+    <string name="nav_planning">计划</string>
+    <string name="nav_budget">预算</string>
+    <string name="nav_account">账户</string>
+    <string name="nav_setting">设置</string>
+    <string name="search">搜索</string>
+    <string name="take_pic">拍照</string>
+    <string name="sync_or_not">是否同步</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="add">添加</string>
+    <string name="password_setting">密码保护</string>
+    <string name="delete_title">删除提示</string>
+    <string name="delete_message">是否删除该记录?</string>
+    <string name="delete">删除</string>
+    <string name="delete_cancel">取消</string>
+    <string name="account_canot_delete">账户不允许删除,请先清空该账户有关的所有消费记录</string>
+    <string name="category_canot_delete">分类不允许删除,请先清空该分类有关的子分类和消费记录</string>
+    <string name="corporation_canot_delete">商家不允许删除,请先清空该商家有关的所有消费记录</string>
+    <string name="magic_code">0</string>
+    <string name="budget_max_expense_tips">本月总预算金额</string>
+    <string name="budget_category_expense_tips">设置月分类预算金额</string>
+
+	<!-- memo——MyDialog -->
+	<string name="dialog_memo_title">备注</string>
+	<string name="dialog_memo_ok">保存</string>
+	<string name="dialog_memo_cancle">取消</string>
+	
+	<!-- MainActivity -->
+    <string name="text_title_today">流水清单-按天</string>
+    <string name="text_title_week">流水清单-按周</string>
+    <string name="text_title_month">流水清单-按月</string>
+	
+    <!-- TransactionTabActivity -->
+    <string name="input_message">请填写金额</string>
+    <string name="edit_message">编辑成功</string>
+    <string name="save_message">保存成功</string>
+    <string name="edit_in">编辑收入</string>
+    <string name="edit_out">编辑支出</string>
+    
+    <!-- NavExpenseActivity -->
+    <string name="message_error_system">系统错误</string>
+    <string name="message_delete_ok">删除成功.</string>
+    <string name="message_error_edit">抱歉,只有收入和支出记录可以编辑</string>
+    
+    <!-- SettingAddOrEditAccountActivity -->
+    <string name="edit_point">自动计算,无需设定</string>
+    <string name="error_user_empty">账户名不能为空</string>
+    <string name="error_user_there">对不起,该账户已经存在!</string>
+    <string name="error_balance_empty">余额不能为空</string>
+    <string name="error_balance_number">余额数据填写不正确,只能为数字</string>
+    <string name="error_system">抱歉,软件故障,操作失败.</string>
+    
+    <!-- TransferActivity -->
+    <string name="transfer_amount_empty">金额不能为空</string>
+    <string name="transfer_amount_0">金额不能为0</string>
+    <string name="transfer_amount_number">金额数据填写不正确,只能为数字</string>
+    <string name="transfer_ok">转账成功</string>
+    
+    <!-- Budget -->
+    <string name="balance_amount_title">余额：</string>
+    <string name="budget_ok">预算设置成功</string>
+    
+    <string name="label">"标签"</string>
+    <string name="alarm_list_title">"闹钟"</string>
+    <string name="add_alarm">"添加闹钟"</string>
+    <string name="desk_clock_button_description">"时钟显示"</string>
+    <string name="default_label">"闹钟"</string>
+    <string name="menu_desk_clock">"座钟"</string>
+    <string name="menu_edit_alarm" >"修改闹钟设置"</string>
+    <string name="enable_alarm">"启用闹钟"</string>
+    <string name="delete_alarm">"取消闹钟"</string>
+    <string name="disable_alarm">"停用闹钟"</string>
+    <string name="delete_alarm_confirm">"将会取消此闹钟。"</string>
+    <string name="alarm_notify_snooze_label">"<xliff:g id="LABEL">%s</xliff:g>（已暂停）"</string>
+    <string name="alarm_repeat">"重复"</string>
+    <string name="alarm_vibrate">"振动"</string>
+    <string name="alert">"铃声"</string>
+    <string name="time">"时间"</string>
+    <string name="set_alarm">"设置闹钟"</string>
+    
+    <string name="revert">"还原"</string>
+    <string name="alarm_alert_dismiss_text">"取消"</string>
+    <string name="alarm_volume_title">"闹钟音量"</string>
+    <string name="alarm_volume_summary">"设置闹钟音量"</string>
+    <string name="silent_alarm_summary">"静音"</string>
+    <string name="alarm_notify_text">"选择暂停或关闭此闹钟。"</string>
+    <string name="alarm_alert_snooze_text">"暂停再响"</string>
+    <string name="alarm_alert_alert_silenced">"闹钟响铃时间为 <xliff:g id="MINUTES">%d</xliff:g> 分钟"</string>
+    <string name="alarm_notify_snooze_text">"已将闹钟设置为从现在起 <xliff:g id="TIME">%s</xliff:g>后再提醒。选中可以取消。"</string>
+    <string name="alarm_alert_snooze_set">"暂停 <xliff:g id="MINUTES">%d</xliff:g> 分钟。"</string>
+
+    <string-array name="alarm_set">
+	    <item msgid="5163476010406761625">"已将此闹钟设置为从现在起不到 1 分钟后提醒。"</item>
+	    <item msgid="7110525731259629055">"已将此闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g>后再提醒。"</item>
+	    <item msgid="7003982794086186185">"已将此闹钟设置为从现在起 <xliff:g id="HOURS">%2$s</xliff:g>后再提醒。"</item>
+	    <item msgid="7311021123230077742">"已将此闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g> <xliff:g id="HOURS">%2$s</xliff:g>后再提醒。"</item>
+	    <item msgid="8431715191823114872">"已将此闹钟设置为从现在起 <xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+	    <item msgid="3244151088673185428">"已将此闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g> <xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+	    <item msgid="3663661342600168814">"已将此闹钟设置为从现在起 <xliff:g id="HOURS">%2$s</xliff:g> <xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+	    <item msgid="7779544127785487304">"已将该闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g> <xliff:g id="HOURS">%2$s</xliff:g> <xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+    </string-array>
+    <string name="day">"1 天"</string>
+    <string name="days">"<xliff:g id="DAYS">%s</xliff:g> 天"</string>
+    <string name="hour">"1 小时"</string>
+    <string name="hours" msgid="2071487018566991613">"<xliff:g id="HOURS">%s</xliff:g> 小时"</string>
+    <string name="minute">"1 分钟"</string>
+    <string name="minutes">"<xliff:g id="MINUTES">%s</xliff:g> 分钟"</string>
+    <string name="every_day">"每天"</string>
+    <string name="never">"一律不"</string>
+    <string name="day_concat">", "</string>
+    <string name="clock_instructions">"选择要显示的时钟。"</string>
+    <string name="analog_gadget">"模拟时钟"</string>
+    <string name="settings">"设置"</string>
+    <string name="alarm_in_silent_mode_title">"静音模式下闹钟响"</string>
+    <string name="alarm_in_silent_mode_summary">"手机处于静音模式时，闹钟仍会响"</string>
+    <string name="snooze_duration_title">"再响间隔"</string>
+  <string-array name="snooze_duration_entries">
+    <item msgid="8337408933053603125">"5 分钟"</item>
+    <item msgid="5294206441496024610">"10 分钟"</item>
+    <item msgid="2165904039211935470">"15 分钟"</item>
+    <item msgid="7248236967714374250">"20 分钟"</item>
+    <item msgid="738394723625179423">"25 分钟"</item>
+    <item msgid="1180222611308391616">"30 分钟"</item>
+  </string-array>
+  <string-array name="snooze_duration_values">
+    <item msgid="3655014754453084122">"5"</item>
+    <item msgid="8939029597449573449">"10"</item>
+    <item msgid="3922647341176353315">"15"</item>
+    <item msgid="5821804105985044459">"20"</item>
+    <item msgid="6048861883552402852">"25"</item>
+    <item msgid="2740866721232379791">"30"</item>
+  </string-array>
+  <string name="alarm_klaxon_service_desc">"在 DeskClock 中设置的闹钟铃声播放服务。"</string>
+  
+  <!-- BMI -->
+    <string name="stature">身高(cm)</string>
+    <string name="weight">体重(kg)  </string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="input_clear">输入清空</string>
+    <string name="calculate_bmi">计算BMI值</string>
+    <string name="not_null">输入的身高或体重不能为空</string>
+    <string name="not_low_0">输入的必须是大于0的数</string>
+    <string name="text0">您的身高体重比</string>
+    <string name="text1">\n您的体重过轻\n需要增强锻炼和增加营养</string>
+    <string name="text2">\n您的体重适中\n请继续保持</string>
+    <string name="text3">\n您的体重过重\n需要进行适当的减肥</string>
+    <string name="text4">\n您的体重肥胖\n应加强锻炼进行减肥</string>
+    
+    <!-- 日记 -->
+    <string name="accountflag">写日记</string>
+    <string name="showinfo">查询日记</string>
+    <string name="flagmanage">日记管理</string>
+    
+    <!-- 涂鸦 -->
+    <string name="action_settings">Settings</string>  
+    <string name="hello_world">Hello world!</string>  
+    <string name="choose">选择图片</string>  
+    <string name="contentDes">图片描述</string>  
+    <string name="pleaseChooseImage">请选择图片</string>  
+    <string name="saveSuccess">保存图片成功</string> 
+    
+    <string name="addItemHint">添加新的待办事项</string>
+    <string name="addItemContentDescription">新的待办事项</string>
+    <string name="edit">修改</string>
+    <string name="addNew">新增</string>
+    <string name="title_activity_calendar_and_time">CalendarAndTimeActivity</string>
+    <string name="title_activity_data_and_time">DataAndTimeActivity</string>
+    <string name="sunday_text">周日</string>
+    <string name="monday_text">周一</string>
+    <string name="tuesday_text">周二</string>
+    <string name="wednesday_text">周三</string>
+    <string name="thursday_text">周四</string>
+    <string name="friday_text">周五</string>
+    <string name="saturday_text">周六</string>
+    <string name="today_text">今天</string>
+    <string name="now_text">现在</string>
+    <string name="choice_date_text">请选择日期</string>
+    <string name="choice_time_text">请选择时间</string>
+    <string name="item_task_text">事项</string>
+    <string name="item_time_text">时间</string>
+    <string name="item_alert_text">提醒</string>
+    <string name="item_priority_text">优先级</string>
+    <string name="item_duplicate_text">重复</string>
+    <string name="item_duplicate_contentDescription">重复周期</string>
+</resources>

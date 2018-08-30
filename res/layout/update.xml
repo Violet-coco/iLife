@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/beijing1" >
+    
+    <TextView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"/>
+	 <TextView
+            android:id="@+id/tiem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="设置时的日期时间："
+            android:textStyle="bold"
+            android:textSize="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题:"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="标题。。。" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容:"
+            android:textSize="20dp" 
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:hint="内容。。。"
+            android:inputType="textMultiLine" 
+            android:lines="3"
+            android:gravity="left"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_tiem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:lines="2"/>
+
+        <Button
+            android:id="@+id/but_set"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="设置日期时间" />
+      
+    </LinearLayout>
+	<TextView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="120dp"
+	    android:background="@drawable/png_0374"/>
+    
+
+</LinearLayout>

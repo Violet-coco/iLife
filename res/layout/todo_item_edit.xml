@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarSize="1dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- ToDoItem task -->
+
+        <TextView
+            android:id="@+id/itemTaskLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/item_task_text"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/itemTaskEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:hint="@string/addItemHint"
+            android:lines="6" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="?android:attr/listDivider" />
+        <!-- ToDoItem time -->
+
+        <TextView
+            android:id="@+id/itemTimeLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/item_time_text"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            style=" ?android:attr/buttonBarStyle "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="0dip" >
+
+            <Button
+                android:id="@+id/dateBtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dip"
+                android:layout_weight="0.3"
+                android:drawableLeft="@drawable/calender"
+                android:padding="4dp" />
+
+            <Button
+                android:id="@+id/timeBtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dip"
+                android:layout_weight="0.7"
+                android:drawableLeft="@drawable/clock"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="?android:attr/listDivider" />
+        <!-- ToDoItem alertTime -->
+
+        <RelativeLayout
+            android:id="@+id/alertLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/itemAlertLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/item_alert_text"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/itemAlertTime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemAlertLabel"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/itemAlertImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/item_duplicate_contentDescription"
+                android:src="@drawable/add" />
+        </RelativeLayout>
+
+        <TableLayout
+            android:id="@+id/alertTableLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:padding="5dip"
+            android:stretchColumns="0,1" >
+        </TableLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="?android:attr/listDivider" />
+        <!-- ToDoItem duplicate -->
+
+        <RelativeLayout
+            android:id="@+id/duplicateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/itemDuplicateLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/item_duplicate_text"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/itemDuplicate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemDuplicateLabel"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/item_duplicate_contentDescription"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="?android:attr/listDivider" />
+        <!-- ToDoItem priority -->
+
+        <RelativeLayout
+            android:id="@+id/priorityLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/itemPriorityLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/item_priority_text"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/itemPriority"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemPriorityLabel"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/item_duplicate_contentDescription"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="?android:attr/listDivider" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/beijing1" >
+    <TextView 
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        />
+    <LinearLayout 
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="关键字："
+            android:textSize="20dp" />
+
+     <EditText
+         android:id="@+id/et_tags"
+         android:layout_width="196dp"
+         android:layout_height="wrap_content" />
+
+     <ImageButton
+         android:id="@+id/ib_soso"
+         android:layout_width="40dp"
+         android:layout_height="40dp"
+         android:background="@drawable/png0017" />
+   
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	<RadioGroup
+	    android:id="@+id/rg01"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:checkedButton="@+id/rb01"
+	    android:orientation="horizontal"
+	    android:gravity="center">
+
+		<RadioButton
+		    android:id="@+id/rb01"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="设置时的时间" />
+
+		<RadioButton
+		    android:id="@+id/rb02"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="触发时的时间" />
+
+	</RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择时间段！"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/but_01"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="请选择时间" />
+
+        <Button
+            android:id="@+id/but_02"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:text="请选择时间" />
+    </LinearLayout>
+
+    <TextView 
+        android:id="@+id/tv_show"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+    <TextView 
+        android:id="@+id/tv_show1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+     <LinearLayout 
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+    <TextView 
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/png0026"
+        />
+    <TextView 
+        android:id="@+id/tv_count1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        />
+         
+     </LinearLayout>
+    <LinearLayout 
+       android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+   
+    <ListView 
+        android:id="@+id/lv_01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

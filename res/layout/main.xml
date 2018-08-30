@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_bg"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/linearLayoutindex"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_logo"
+        android:background="@drawable/index_bg"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <GridView
+	    android:id="@+id/gvInfo"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@id/linearLayoutindex"
+	    android:columnWidth="65dp"
+	    android:numColumns="auto_fit"
+	    android:verticalSpacing="10dp"
+	    android:horizontalSpacing="15dp"
+	    android:stretchMode="columnWidth"
+	    android:gravity="center"
+	    android:textColor="#ffff0000"
+/>
+</RelativeLayout>

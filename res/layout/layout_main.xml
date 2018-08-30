@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:padding="5dp"
+    tools:context=".MainActivity" 
+    android:background="@drawable/beijing">
+	<!-- 包裹内容的容器 -->
+    <RelativeLayout 
+        android:id="@+id/layout0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <!-- 包裹输入框 -->
+        <RelativeLayout 
+            android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <!-- 身高TextView -->
+            <TextView 
+                android:id="@+id/tvStature"
+                android:text="@string/stature"
+                style="@style/textview"
+                android:layout_marginTop="10dp"
+                />
+            <!-- 身高EditText -->
+            <EditText 
+                android:id="@+id/etStature"
+                style="@style/edittext"
+                android:layout_toRightOf="@id/tvStature"
+                android:singleLine="true"
+                android:maxLength="5"
+                android:inputType="numberSigned"
+                />
+             <!-- 体重TextView -->
+            <TextView 
+                android:id="@+id/tvWeight"
+                android:text="@string/weight"
+                style="@style/textview"
+                android:layout_below="@id/tvStature"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                />
+            <!-- 体重EditText -->
+            <EditText 
+                android:id="@+id/etWeight"
+                style="@style/edittext"
+                android:layout_toRightOf="@id/tvWeight"
+                android:layout_below="@id/etStature"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:maxLength="5"
+                android:inputType="numberDecimal"
+                />
+        </RelativeLayout>
+        <!-- 单选按钮 -->
+        <RadioGroup 
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/layout1"
+            android:checkedButton="@+id/man"
+            android:layout_marginLeft="15dp"
+            >
+            <!-- 男 -->
+            <RadioButton 
+                android:id="@+id/man"
+                android:text="@string/man"
+                android:textSize="20sp"
+                />
+            <!-- 女 -->
+            <RadioButton 
+                android:id="@+id/woman"
+                android:text="@string/woman"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                />
+        </RadioGroup>
+    </RelativeLayout>
+	<!-- 下方的按钮 -->
+	<!-- 输入清空 -->
+	<Button 
+	    android:id="@+id/btninput_clear"
+	    android:layout_width="150dp"
+	    android:layout_height="wrap_content"
+	    android:text="@string/input_clear"
+	    android:layout_below="@id/layout0"
+	    />
+	<!-- 计算BMI值 -->
+	<Button 
+	    android:id="@+id/btncalculate_bmi"
+	    android:layout_width="150dp"
+	    android:layout_height="wrap_content"
+	    android:text="@string/calculate_bmi"
+	    android:layout_below="@id/layout0"
+	    android:layout_toRightOf="@id/btninput_clear"
+	    android:layout_marginLeft="20dp"
+	    />
+</RelativeLayout>
